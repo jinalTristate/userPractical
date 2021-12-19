@@ -1,0 +1,27 @@
+[{
+  "_id": {
+    "$oid": "61bed6a0dea8b31d2425d942"
+  },
+  "first_name": "Nisha",
+  "last_name": "Patel",
+  "email": "pateljinal932@gmail.com",
+  "phone_number": "9956325865",
+  "profileImage": "flower.jpg",
+  "verification_code": "",
+  "is_verified": 1,
+  "is_activated": 1,
+  "created_date": {
+    "date": {
+      "$date": "2021-12-19T06:52:16.882Z"
+    },
+    "timestamp": 1639896736
+  },
+  "modified_date": {
+    "date": {
+      "$date": "2021-12-19T10:44:29.091Z"
+    },
+    "timestamp": 1639910669
+  },
+  "salt": "$2a$10$be5IuBGBRpEzqNsokZ0GEe",
+  "hash": "$2a$10$be5IuBGBRpEzqNsokZ0GEeBxb1rFEIJ2EuQUBv4GtOmuwSTX0QT8W"
+}]
