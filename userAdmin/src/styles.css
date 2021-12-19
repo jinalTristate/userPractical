@@ -1,0 +1,9 @@
+@import url("../src/assets/css/bootstrap.min.css");
+
+@import url("../src/assets/css/style.css");
+
+@import url("../src/assets/css/media.css");
+
+@import url("../src/assets/css/aos.css");
+
+@import url("~@ng-select/ng-select/themes/default.theme.css");
