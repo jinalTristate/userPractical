@@ -1,0 +1,142 @@
+<div class="card ">
+  <div class="card-header">
+    <div class="col-sm-4">EDIT USER PROFILE</div>
+  </div>
+  <div class="card-block">
+    <div class="d-md-flex" class="loginMainCustom">
+      <div
+        class="signinForm d-flex justify-content-center align-items-center row"
+      >
+        <div class="formMain">
+          <form
+            [formGroup]="editProfileForm"
+            (ngSubmit)="updateProfile()"
+            class="mt-10 animated fadeInRight signupForm col-6 offset-lg-3"
+          >
+            <div class="form mt-10">
+              <div class="form-group">
+                <label>First Name<em>*</em></label>
+                <input
+                  type="text"
+                  formControlName="first_name"
+                  name="first_name"
+                  placeholder="Enter First Name"
+                  class="field"
+                />
+                <div
+                  *ngIf="
+                    f.first_name.invalid &&
+                    (f.first_name.dirty || f.first_name.touched)
+                  "
+                >
+                  <div class="errMsg" *ngIf="f.first_name.errors.required">
+                    First Name is required
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Last Name<em>*</em></label>
+                <input
+                  type="text"
+                  formControlName="last_name"
+                  name="last_name"
+                  placeholder="Enter Last Name"
+                  class="field"
+                />
+                <div
+                  *ngIf="
+                    f.last_name.invalid &&
+                    (f.last_name.dirty || f.last_name.touched)
+                  "
+                >
+                  <div class="errMsg" *ngIf="f.last_name.errors.required">
+                    Last Name is required
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Phone Number<em>*</em></label>
+                <input
+                  type="text"
+                  formControlName="phone_number"
+                  name="phone_number"
+                  placeholder="Enter Phone Number"
+                  class="field"
+                  (keypress)="numberOnly($event)"
+                  maxlength="10"
+                />
+                <div
+                  *ngIf="
+                    f.phone_number.invalid &&
+                    (f.phone_number.dirty || f.phone_number.touched)
+                  "
+                >
+                  <div class="errMsg" *ngIf="f.phone_number.errors.required">
+                    Phone number is required
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Email<em>*</em></label>
+                <input
+                  type="text"
+                  disabled
+                  formControlName="email"
+                  name="email"
+                  placeholder="Enter Email"
+                  class="field"
+                />
+              </div>
+              <div class="row mt-4">
+                <div class="col">
+                  <div class="form-group defaultimg">
+                    <label
+                      *ngIf="images.length < imagesLimit"
+                      class="uploadImgTxt"
+                      >Profile Image<em>*</em></label
+                    >
+                    <input
+                      type="file"
+                      accept="image/*"
+                      (change)="onImageFile($event.target.files)"
+                      id="files"
+                      class="form-control"
+                      style="display: none"
+                    />
+                    <label
+                      *ngIf="images.length < imagesLimit"
+                      for="files"
+                      class="uploadImg"
+                    >
+                      <i class="fa fa-camera" aria-hidden="true"></i>
+                      <span>Upload</span>
+                    </label>
+                    <div
+                      *ngFor="let image of imagesPreview; let i = index"
+                      class="eventSelectedImg"
+                    >
+                      <label for="files"
+                        ><img defaultImg [src]="image"
+                      /></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="btmBtn text-center row">
+                <button
+                  style="border-radius: 4px"
+                  type="submit"
+                  class="textWhite blueBtn text-center col-4"
+                >
+                  Update
+                </button>
+                <button style="border-radius: 4px;" type="submit" [routerLink]="'/user-profile'"
+                            class="textWhite blueBtn text-center col-4 ml-2">Cancel</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

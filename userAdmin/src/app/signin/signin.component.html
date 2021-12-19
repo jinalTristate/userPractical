@@ -1,0 +1,32 @@
+<div class="d-md-flex" class='loginMainCustom'>
+    <div class="signinForm d-flex justify-content-center align-items-center">
+        <div class="formMain">
+            <form [formGroup]="signInForm" (ngSubmit)="submit()" class="animated fadeInRight">
+            <div class="form">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="text" formControlName="email" name="email" placeholder="Enter Email" class="field">
+                    <div *ngIf="f.email.invalid && (f.email.dirty || f.email.touched)">
+                        <div class="errMsg" *ngIf="f.email.errors.required">Email is required</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" formControlName="password" name="password" placeholder="******" class="field">
+                    <div *ngIf="f.password.invalid && (f.password.dirty || f.password.touched)">
+                        <div class="errMsg" *ngIf="f.password.errors.required">Password is required</div>
+                    </div>
+                </div>
+                <div class="btmBtn text-center">
+                    <button style="border-radius: 4px;" type="submit" [disabled]="!signInForm.valid"
+                        class="textWhite blueBtn text-center">Sign In</button>
+                        <span>Not Registered yet? <a routerLink="/" class="p-0 btn btn-link">Sign Up</a></span>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+

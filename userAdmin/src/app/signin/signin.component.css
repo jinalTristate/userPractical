@@ -1,0 +1,26 @@
+
+
+.has-danger .form-control-danger {
+    background-image: none;
+}
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+label{
+  color: white;
+}
+label em{
+  color: red;
+}
+span{
+  color: white;
+  padding-top: 5px;
+}
+.errMsg{
+  color: red;
+}
