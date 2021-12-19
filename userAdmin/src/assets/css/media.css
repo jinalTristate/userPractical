@@ -1,0 +1,179 @@
+.welcomeMsg img {
+  width: 200px;
+}
+
+.signinForm {
+  background: #fff;
+}
+.loginMain .loginLeft {
+  background: none;
+}
+.formField input.field:hover,
+.formField input.field:focus {
+  border: none;
+}
+.formField  {
+  -webkit-box-shadow: 1px 1px 18px -2px rgba(155, 155, 155, 0.31);
+  box-shadow: 1px 1px 18px -2px rgba(155, 155, 155, 0.31);
+}
+
+.paymentInfo {
+  margin: 40px 0 0 0;
+}
+  .loginLeft,
+  .signinForm {
+    width: 100%;
+  }
+  .formMain {
+    padding: 0 0 60px 0px;
+  }
+
+  .loginLeft {
+    width: 100%;
+    height: auto;
+    background: none;
+  }
+  .welcomeMsg p {
+    padding: 60px 0 10px 0;
+  }
+  .signinForm h2 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+ 
+  .formField {
+    margin: 0 0 36px 0;
+  }
+  .btmBtn {
+    padding: 20px 0px 0px 0px;
+  }
+
+  [data-aos] {
+    opacity: 1 !important;
+  }
+  [data-aos] {
+    transform: scale(1) !important;
+  }
+  .signinForm h2 {
+    padding: 0 0 16px 0;
+  }
+
+  .form .field {
+    height: 52px;
+    font-size: 15px;
+    line-height: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    /* border: 1px solid #9e9e9e; */
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  /* .form .field:hover, .form .field:focus {
+    border: 1px solid #fff;
+  } */
+  .form .field::placeholder {
+    color: #989898;
+  }
+
+  .blueBtn:hover {
+    background: #164f8a;
+    color: #fff;
+    border: 1px solid #164f8a;
+  }
+
+  .circle.position-absolute {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #5d5161;
+    top: -1px;
+  }
+  .formField {
+    margin: 0 0 20px 0;
+  }
+  .formField label {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 0 6px 0;
+  }
+  .blueBtn,
+  .paymentInfo .blueBtn {
+    font-size: 18px;
+  }
+  .signinForm button.btnTransparent {
+    margin-top: 20px;
+  }
+
+  .welcomeMsg {
+    max-width: 100%;
+    width: 100%;
+    padding: 70px 20px 32px;
+  }
+  .seperator {
+    margin: 32px 0;
+  }
+  .signinForm {
+    background: transparent;
+  }
+  .loginMain {
+    overflow-x: hidden;
+    height: 100vh;
+    /* background: url(../images/bg-image.jpg); */
+    flex-wrap: wrap;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    background-position: center center;
+  }
+
+
+  .loginMainCustom {
+    overflow-x: hidden;
+    height: 100vh;
+    /* background: url(../images/bg-image.jpg); */
+    background: black;
+    flex-wrap: wrap;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    background-position: center center;
+  }
+
+  
+  .profileSection {
+    overflow-x: hidden;
+    height: 100vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    background-position: center center;
+  }
+  .logincontentSection {
+    display: inline-block;
+  }
+  .selectBarModal .paymentInfo .btmBtn {
+    padding: 16px 0 12px 0 !important;
+  }
+
+  .custom-select option {
+    color: black;
+  }
+  .formField select {
+    width: 100px;
+  }
+  option {
+    max-width: 50%;
+  }
+
+
+  .selectBarModal .carDetal {
+    margin-top: 22px;
+  }
+  .modal-content {
+    width: 100%;
+  }
+
+  .signinForm .form .field {
+    color: #000;
+    background: #fff;
+  }
+
+
